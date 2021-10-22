@@ -17,9 +17,9 @@ quantity = input(">")
 
 if quantity.upper() == "TIME":
     print('''Choose from which unit to which other unit you have to convert:
-    1. Seconds(use sec)
-    2. Minutes(use min)
-    3. Hours(use hour)''')
+1. Seconds(use sec)
+2. Minutes(use min)
+3. Hours(use hour)''')
     timefrom = input("From: ")
     timeto = input("To: ")
 
@@ -30,3 +30,19 @@ if quantity.upper() == "TIME":
         if timeto.upper() == "HOUR":
             realvalue = int(input("Real Value: "))
             print(f"Converted Value: {Time.sectohour(realvalue)} hours")
+
+    if timefrom.upper() == "MIN":
+        if timeto.upper() == "SEC":
+            realvalue = int(input("Real Value: "))
+            print(f"Converted Value: {Time.mintosec(realvalue)} minutes")
+        if timeto.upper() == "HOUR":
+            realvalue = int(input("Real Value: "))
+            print(f"Converted Value: {Time.mintohour(realvalue)} hours")
+
+    if timefrom.upper() == "HOUR":
+        if timeto.upper() == "SEC":
+            realvalue = int(input("Real Value: "))
+            print(f"Converted Value: {Time.hourtosec(realvalue)} minutes")
+        if timeto.upper() == "MIN":
+            realvalue = int(input("Real Value: "))
+            print(f"Converted Value: {Time.hourtomin(realvalue)} hours")
