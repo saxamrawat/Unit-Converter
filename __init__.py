@@ -296,3 +296,251 @@ elif quantity.upper() == "LENGTH" or quantity.upper() == "2":
         elif lengthto.upper() == "UM" or lengthto == "8":
             realvalue = float(input("Real Value: "))
             print(f"Converted Value: {Length.Nanoto.micro(realvalue)} mm")
+
+elif quantity.upper() == "MASS" or quantity.upper() == "3":
+    print('''Choose from which unit to which other unit you have to convert:
+1. Kilogram(KG)
+2. Hectogram(HM)
+3. Decagram(DAM)
+4. Gram(G)
+5. Decigram(DG)
+6. Centigram(CG)
+7. Miligram(MG)
+8. Microgram(UG)
+9. Nanogram(NG)''')
+    lengthfrom = input("From: ")
+    lengthto = input("To: ")
+
+    if lengthfrom.upper() == "KG" or lengthfrom == "1":
+        if lengthto.upper() == "HG" or lengthto == "2":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Kiloto.hecto(realvalue)} hg")
+        elif lengthto.upper() == "DAG" or lengthto == "3":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Kiloto.deca(realvalue)} dag")
+        elif lengthto.upper() == "G" or lengthto == "4":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Kiloto.meter(realvalue)} g")
+        elif lengthto.upper() == "DG" or lengthto == "5":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Kiloto.deci(realvalue)} dg")
+        elif lengthto.upper() == "CG" or lengthto == "6":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Kiloto.centi(realvalue)} cg")
+        elif lengthto.upper() == "MG" or lengthto == "7":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Kiloto.milli(realvalue)} mg")
+        elif lengthto.upper() == "UG" or lengthto == "8":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Kiloto.micro(realvalue)} ug")
+        elif lengthto.upper() == "NG" or lengthto == "9":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Kiloto.nano(realvalue)} ng")
+
+    elif lengthfrom.upper() == "HG" or lengthfrom == "2":
+        if lengthto.upper() == "KG" or lengthto == "1":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Hectoto.kilo(realvalue)} kg")
+        elif lengthto.upper() == "DAG" or lengthto == "3":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Hectoto.deca(realvalue)} dag")
+        elif lengthto.upper() == "G" or lengthto == "4":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Hectoto.meter(realvalue)} g")
+        elif lengthto.upper() == "DG" or lengthto == "5":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Hectoto.deci(realvalue)} dm")
+        elif lengthto.upper() == "CG" or lengthto == "6":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Hectoto.centi(realvalue)} cg")
+        elif lengthto.upper() == "MG" or lengthto == "7":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Hectoto.milli(realvalue)} mg")
+        elif lengthto.upper() == "UG" or lengthto == "8":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Hectoto.micro(realvalue)} ug")
+        elif lengthto.upper() == "NG" or lengthto == "9":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Hectoto.nano(realvalue)} ng")
+
+    elif lengthfrom.upper() == "DAG" or lengthfrom == "3":
+        if lengthto.upper() == "KG" or lengthto == "1":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decato.kilo(realvalue)} kg")
+        elif lengthto.upper() == "HG" or lengthto == "2":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decato.hecto(realvalue)} hg")
+        elif lengthto.upper() == "G" or lengthto == "4":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decato.meter(realvalue)} g")
+        elif lengthto.upper() == "DG" or lengthto == "5":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decato.deci(realvalue)} dg")
+        elif lengthto.upper() == "CG" or lengthto == "6":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decato.centi(realvalue)} cg")
+        elif lengthto.upper() == "MG" or lengthto == "7":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decato.milli(realvalue)} mg")
+        elif lengthto.upper() == "UG" or lengthto == "8":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decato.micro(realvalue)} ug")
+        elif lengthto.upper() == "NG" or lengthto == "9":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decato.nano(realvalue)} ng")
+
+    elif lengthfrom.upper() == "G" or lengthfrom == "4":
+        if lengthto.upper() == "KG" or lengthto == "1":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Valu1e: {Length.Meterto.kilo(realvalue)} kg")
+        elif lengthto.upper() == "HG" or lengthto == "2":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Meterto.hecto(realvalue)} hg")
+        elif lengthto.upper() == "DAG" or lengthto == "3":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Meterto.deca(realvalue)} dag")
+        elif lengthto.upper() == "DG" or lengthto == "5":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Meterto.deci(realvalue)} dg")
+        elif lengthto.upper() == "CG" or lengthto == "6":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Meterto.centi(realvalue)} cg")
+        elif lengthto.upper() == "MG" or lengthto == "7":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Meterto.milli(realvalue)} mg")
+        elif lengthto.upper() == "UG" or lengthto == "8":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Meterto.micro(realvalue)} ug")
+        elif lengthto.upper() == "NG" or lengthto == "9":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Meterto.nano(realvalue)} ng")
+
+    elif lengthfrom.upper() == "DG" or lengthfrom == "5":
+        if lengthto.upper() == "KG" or lengthto == "1":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decito.kilo(realvalue)} kg")
+        elif lengthto.upper() == "HG" or lengthto == "2":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decito.hecto(realvalue)} hg")
+        elif lengthto.upper() == "DAG" or lengthto == "3":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decito.deca(realvalue)} dag")
+        elif lengthto.upper() == "G" or lengthto == "4":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decito.meter(realvalue)} g")
+        elif lengthto.upper() == "CG" or lengthto == "6":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decito.centi(realvalue)} cg")
+        elif lengthto.upper() == "MG" or lengthto == "7":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decito.milli(realvalue)} mg")
+        elif lengthto.upper() == "UG" or lengthto == "8":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decito.micro(realvalue)} ug")
+        elif lengthto.upper() == "NG" or lengthto == "9":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Decito.nano(realvalue)} ng")
+
+    elif lengthfrom.upper() == "CG" or lengthfrom == "6":
+        if lengthto.upper() == "KG" or lengthto == "1":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Centito.kilo(realvalue)} kg")
+        elif lengthto.upper() == "HG" or lengthto == "2":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Centito.hecto(realvalue)} hg")
+        elif lengthto.upper() == "DAG" or lengthto == "3":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Centito.deca(realvalue)} dag")
+        elif lengthto.upper() == "G" or lengthto == "4":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Centito.meter(realvalue)} g")
+        elif lengthto.upper() == "DG" or lengthto == "5":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Centito.deci(realvalue)} dg")
+        elif lengthto.upper() == "MG" or lengthto == "6":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Centito.milli(realvalue)} mg")
+        elif lengthto.upper() == "UG" or lengthto == "8":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Centito.micro(realvalue)} ug")
+        elif lengthto.upper() == "NG" or lengthto == "9":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Centito.nano(realvalue)} ng")
+
+    elif lengthfrom.upper() == "MG" or lengthfrom == "7":
+        if lengthto.upper() == "KG" or lengthto == "1":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Millito.kilo(realvalue)} kg")
+        elif lengthto.upper() == "HG" or lengthto == "2":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Millito.hecto(realvalue)} hg")
+        elif lengthto.upper() == "DAG" or lengthto == "3":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Millito.deca(realvalue)} dag")
+        elif lengthto.upper() == "G" or lengthto == "4":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Millito.meter(realvalue)} g")
+        elif lengthto.upper() == "CG" or lengthto == "5":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Millito.deci(realvalue)} dg")
+        elif lengthto.upper() == "MG" or lengthto == "6":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Millito.centi(realvalue)} cg")
+        elif lengthto.upper() == "UG" or lengthto == "8":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Millito.micro(realvalue)} ug")
+        elif lengthto.upper() == "NG" or lengthto == "9":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Millito.nano(realvalue)} ng")
+
+    elif lengthfrom.upper() == "UG" or lengthfrom == "8":
+        if lengthto.upper() == "KG" or lengthto == "1":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Microto.kilo(realvalue)} kg")
+        elif lengthto.upper() == "HG" or lengthto == "2":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Microto.hecto(realvalue)} hg")
+        elif lengthto.upper() == "DAG" or lengthto == "3":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Microto.deca(realvalue)} dag")
+        elif lengthto.upper() == "G" or lengthto == "4":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Microto.meter(realvalue)} g")
+        elif lengthto.upper() == "DG" or lengthto == "5":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Microto.deci(realvalue)} dg")
+        elif lengthto.upper() == "CG" or lengthto == "6":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Microto.centi(realvalue)} cg")
+        elif lengthto.upper() == "MG" or lengthto == "7":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Microto.milli(realvalue)} mg")
+        elif lengthto.upper() == "NG" or lengthto == "9":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Microto.nano(realvalue)} ng")
+
+    elif lengthfrom.upper() == "NG" or lengthfrom == "9":
+        if lengthto.upper() == "KG" or lengthto == "1":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Nanoto.kilo(realvalue)} kg")
+        elif lengthto.upper() == "HG" or lengthto == "2":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Nanoto.hecto(realvalue)} hg")
+        elif lengthto.upper() == "DAG" or lengthto == "3":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Nanoto.deca(realvalue)} dag")
+        elif lengthto.upper() == "G" or lengthto == "4":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Nanoto.meter(realvalue)} g")
+        elif lengthto.upper() == "DG" or lengthto == "5":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Nanoto.deci(realvalue)} dg")
+        elif lengthto.upper() == "CG" or lengthto == "6":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Nanoto.centi(realvalue)} cg")
+        elif lengthto.upper() == "MG" or lengthto == "7":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Nanoto.milli(realvalue)} mg")
+        elif lengthto.upper() == "UG" or lengthto == "8":
+            realvalue = float(input("Real Value: "))
+            print(f"Converted Value: {Length.Nanoto.micro(realvalue)} mg")
