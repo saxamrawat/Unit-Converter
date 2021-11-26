@@ -1,5 +1,6 @@
 import Time
 import Length
+import Temperature
 
 print('''Welcome to The Universal Unit Converter.
 
@@ -10,9 +11,8 @@ Please choose from the quantities given below:
 2. Length
 3. Mass
 4. Volume
-5. Thermodynamic Temperature
-6. Amount Of Substance
-7. Luminous Intensity''')
+5. Thermodynamic Temperature(TEMP)
+''')
 
 quantity = input("> ")
 
@@ -795,3 +795,41 @@ elif quantity.upper() == "VOLUME" or quantity.upper() == "4":
         elif volumeto.upper() == "UL" or volumeto == "8":
             realvalue = float(input("Real Value: "))
             print(f"Converted Value: {Length.Nanoto.micro(realvalue)} ml")
+
+elif quantity.upper() == "TEMP" or quantity == "5":
+    print('''Choose from which unit to which other unit you have to convert:
+1. Celcius(C)
+2. Fahrenheit(F)
+3. Kelvin(K)''')
+    tempfrom = input("From: ")
+    tempto = input("To: ")
+
+    if tempfrom.upper() == "C" or tempfrom == "1":
+        if tempto.upper() == "F" or tempto == "2":
+            realvalue = float(input("Real Value: "))
+            print(
+                f"Converted Value: {Temperature.Celsiusto.fahrenheit(realvalue)}°F")
+        elif tempto.upper() == "K" or tempto == "3":
+            realvalue = float(input("Real Value: "))
+            print(
+                f"Converted Value: {Temperature.Celsiusto.kelvin(realvalue)} K")
+
+    elif tempfrom.upper() == "F" or tempfrom == "2":
+        if tempto.upper() == "C" or tempto == "1":
+            realvalue = float(input("Real Value: "))
+            print(
+                f"Converted Value: {Temperature.Fahrenheitto.celsius(realvalue)}°C")
+        elif tempto.upper() == "K" or tempto == "3":
+            realvalue = float(input("Real Value: "))
+            print(
+                f"Converted Value: {Temperature.Fahrenheitto.kelvin(realvalue)} K")
+
+    elif tempfrom.upper() == "K" or tempfrom == "3":
+        if tempto.upper() == "C" or tempto == "1":
+            realvalue = float(input("Real Value: "))
+            print(
+                f"Converted Value: {Temperature.Kelvinto.celsius(realvalue)}°C")
+        elif tempto.upper() == "F" or tempto == "2":
+            realvalue = float(input("Real Value: "))
+            print(
+                f"Converted Value: {Temperature.Kelvinto.fahrenheit(realvalue)}°F")
